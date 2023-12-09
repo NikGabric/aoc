@@ -18,7 +18,7 @@ fn test_one() {
     assert_eq!(task_one(input), 3);
 }
 
-pub fn task_two(data: &String) -> i32 {
+pub fn task_two(data: &str) -> i32 {
     let mut floor: i32 = 0;
     let mut index: i32 = 0;
     for (i, c) in data.chars().enumerate() {
@@ -30,9 +30,15 @@ pub fn task_two(data: &String) -> i32 {
                     index = (i + 1) as i32;
                     break;
                 }
-            },
+            }
             _ => {}
         }
     }
     index
+}
+
+#[test]
+fn test_two() {
+    let input = "((((())))))))";
+    assert_eq!(task_two(input), 11);
 }
