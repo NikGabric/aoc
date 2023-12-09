@@ -13,9 +13,13 @@ fn main() {
             let mut res1= 0;
             let mut res2= 0;
             match arg.as_str() {
-                 "1" => {
+                "1" => {
                     res1 = days::one::task_one(&data);
                     res2 = days::one::task_two(&data);
+                }
+                "2" => {
+                    res1 = days::two::task_one(&data);
+                    res2 = days::two::task_two(&data);
                 }
                 _ => {}
             }
