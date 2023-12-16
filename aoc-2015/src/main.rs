@@ -25,6 +25,14 @@ fn main() {
                     res1 = days::three::task_one(&data);
                     res2 = days::three::task_two(&data);
                 }
+                "4" => {
+                    println!("Day 4 implemented in Python!");
+                    continue;
+                }
+                "5" => {
+                    res1 = days::five::task_one(&data);
+                    res2 = days::five::task_two(&data);
+                }
                 _ => {}
             }
             println!("Result for day {arg} task 1: {res1}");
